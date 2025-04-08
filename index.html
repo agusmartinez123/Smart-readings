@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Readings</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            border-bottom: 2px solid #eee;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 60px;
+            margin-right: 15px;
+        }
+        .logo h1 {
+            color: hotpink;
+            font-size: 2em;
+            margin: 0;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #f8f8f8;
+        }
+        .hero img {
+            width: 45%;
+            border-radius: 10px;
+        }
+        .hero-text {
+            width: 50%;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .payment-logos {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .payment-logos img {
+            height: 40px;
+            margin: 0 15px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 30px;
+        }
+        .product {
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .testimonios {
+            margin: 40px;
+        }
+        footer {
+            background-color: #eee;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <h1>Smart Readings</h1>
+    </div>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Más vendido</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="persona-leyendo.jpg" alt="Persona leyendo">
+    <div class="hero-text">
+        Ideas para leer, imprimir, crear y disfrutar.<br>
+        Descargá lo que más te guste.
+    </div>
+</section>
+
+<div class="payment-logos">
+    <p>Aceptamos:</p>
+    <p><strong>CBU:</strong> 0110622630062218806079<br>
+    <strong>Alias:</strong> agus.martinez123</p>
+</div>
+
+<section class="products">
+    <div class="product">
+        <img src="1.jpg" alt="Pequeños cambios grandes resultados">
+        <p>Pequeños cambios grandes resultados<br>$1000</p>
+        <a href="https://drive.google.com/file/d/10qyEngkY_ALDXWJJnYhqPtxpN93RUPkh/view?usp=drivesdk">Descargar</a>
+    </div>
+    <div class="product">
+        <img src="2.jpg" alt="Si escucharas mi corazón">
+        <p>Si escucharas mi corazón<br>$2000</p>
+        <a href="https://drive.google.com/file/d/10sprkV2kK1WgCN5JoL6U05U17VD6OqZi/view?usp=drivesdk">Descargar</a>
+    </div>
+    <div class="product">
+        <img src="3.jpg" alt="100 recetas saludables">
+        <p>100 recetas saludables<br>$1500</p>
+        <a href="https://drive.google.com/file/d/102e-4RYgdXSmfFq8kRAcCUe_gNRycX9Q/view?usp=drivesdk">Descargar</a>
+    </div>
+    <div class="product">
+        <img src="4.jpg" alt="Nosotros en la luna">
+        <p>Nosotros en la luna<br>$2000</p>
+        <a href="https://drive.google.com/file/d/10Wxuaahh9iYlwOlFbFRSMoJwSEIGdyU9/view?usp=drivesdk">Descargar</a>
+    </div>
+</section>
+
+<section class="testimonios">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://agusmartinez123.github.io';  
+        this.page.identifier = 'smart-readings-home';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://disqus_gE0elj4zq3.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+</section>
+
+<footer>
+    Contacto: amilagrosmartinez69@gmail.com
+</footer>
+
+</body>
+</html>
