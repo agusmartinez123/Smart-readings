@@ -2,170 +2,182 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Readings</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            border-bottom: 2px solid #eee;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            height: 60px;
-            margin-right: 15px;
-        }
-        .logo h1 {
-            color: hotpink;
-            font-size: 2em;
-            margin: 0;
-        }
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: blue;
-            font-weight: bold;
-        }
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px;
-            background-color: #f8f8f8;
-        }
-        .hero img {
-            width: 45%;
-            border-radius: 10px;
-        }
-        .hero-text {
-            width: 50%;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .payment-logos {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .payment-logos img {
-            height: 40px;
-            margin: 0 15px;
-        }
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 30px;
-        }
-        .product {
-            width: 200px;
-            margin: 20px;
-            text-align: center;
-        }
-        .product img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .product a {
-            display: block;
-            margin-top: 10px;
-            text-decoration: none;
-            background-color: green;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .testimonios {
-            margin: 40px;
-        }
-        footer {
-            background-color: #eee;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Readings</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f5f5dc; /* beige */
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: white;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      height: 50px;
+    }
+    .logo h1 {
+      color: pink;
+      font-size: 2em;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+      background-color: white;
+    }
+    .hero img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+    .hero-text {
+      max-width: 400px;
+      margin-left: 20px;
+      font-size: 1.2em;
+    }
+    .payment-logos {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .payment-logos img {
+      height: 50px;
+      margin: 0 10px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      max-width: 200px;
+      background: white;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .product h3 {
+      font-size: 1em;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 0 0 10px;
+    }
+    .product a {
+      display: inline-block;
+      padding: 8px 12px;
+      background: goldenrod;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    #disqus_thread {
+      margin: 50px 20px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <div class="logo">
-        <img src="logo.png" alt="Logo">
-        <h1>Smart Readings</h1>
+      <img src="assets/logo.png" alt="Logo" />
+      <h1>Smart Readings</h1>
     </div>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Más vendido</a>
-        <a href="#">Sobre nosotros</a>
-        <a href="#">Contacto</a>
+      <a href="#">Inicio</a>
+      <a href="#">Más vendido</a>
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Contacto</a>
     </nav>
-</header>
-
-<section class="hero">
-    <img src="persona-leyendo.jpg" alt="Persona leyendo">
+  </header>
+  <section class="hero">
+    <img src="assets/leyendo.png" alt="Persona leyendo" />
     <div class="hero-text">
-        Ideas para leer, imprimir, crear y disfrutar.<br>
-        Descargá lo que más te guste.
+      <p>Ideas para leer, imprimir, crear y disfrutar. Descargá lo que más te guste.</p>
     </div>
-</section>
-
-<div class="payment-logos">
-    <p>Aceptamos:</p>
-    <p><strong>CBU:</strong> 0110622630062218806079<br>
-    <strong>Alias:</strong> agus.martinez123</p>
-</div>
-
-<section class="products">
+  </section>
+  <div class="payment-logos">
+    <img src="assets/cbu.png" alt="CBU" />
+  </div>
+  <section class="products">
     <div class="product">
-        <img src="1.jpg" alt="Pequeños cambios grandes resultados">
-        <p>Pequeños cambios grandes resultados<br>$1000</p>
-        <a href="https://drive.google.com/file/d/10qyEngkY_ALDXWJJnYhqPtxpN93RUPkh/view?usp=drivesdk">Descargar</a>
+      <img src="assets/pdf1.png" alt="Pequeños cambios grandes resultados" />
+      <h3>Pequeños cambios grandes resultados</h3>
+      <p>Precio: $1000</p>
+      <a href="#">Alias: agus.martinez123</a>
     </div>
     <div class="product">
-        <img src="2.jpg" alt="Si escucharas mi corazón">
-        <p>Si escucharas mi corazón<br>$2000</p>
-        <a href="https://drive.google.com/file/d/10sprkV2kK1WgCN5JoL6U05U17VD6OqZi/view?usp=drivesdk">Descargar</a>
+      <img src="assets/pdf2.jpg" alt="Si escucharas mi corazón" />
+      <h3>Si escucharas mi corazón</h3>
+      <p>Precio: $2000</p>
+      <a href="#">Alias: agus.martinez123</a>
     </div>
     <div class="product">
-        <img src="3.jpg" alt="100 recetas saludables">
-        <p>100 recetas saludables<br>$1500</p>
-        <a href="https://drive.google.com/file/d/102e-4RYgdXSmfFq8kRAcCUe_gNRycX9Q/view?usp=drivesdk">Descargar</a>
+      <img src="assets/pdf3.jpg" alt="100 recetas saludables" />
+      <h3>100 recetas saludables</h3>
+      <p>Precio: $1500</p>
+      <a href="#">Alias: agus.martinez123</a>
     </div>
     <div class="product">
-        <img src="4.jpg" alt="Nosotros en la luna">
-        <p>Nosotros en la luna<br>$2000</p>
-        <a href="https://drive.google.com/file/d/10Wxuaahh9iYlwOlFbFRSMoJwSEIGdyU9/view?usp=drivesdk">Descargar</a>
+      <img src="assets/pdf4.jpg" alt="Nosotros en la luna" />
+      <h3>Nosotros en la luna</h3>
+      <p>Precio: $2000</p>
+      <a href="#">Alias: agus.martinez123</a>
     </div>
-</section>
-
-<section class="testimonios">
-    <div id="disqus_thread"></div>
-    <script>
+  </section>
+  <div id="disqus_thread"></div>
+  <script>
     var disqus_config = function () {
-        this.page.url = 'https://agusmartinez123.github.io';  
-        this.page.identifier = 'smart-readings-home';
+      this.page.url = window.location.href;
+      this.page.identifier = "smart-readings";
     };
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://disqus_gE0elj4zq3.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://disqus_gE0elj4zq3.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
     })();
-    </script>
-</section>
-
-<footer>
-    Contacto: amilagrosmartinez69@gmail.com
-</footer>
-
+  </script>
+  <footer>
+    <p>Contacto: amilagrosmartinez69@gmail.com</p>
+  </footer>
 </body>
 </html>
