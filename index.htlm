@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Readings</title>
+  <style>
+    body {
+      background-color: beige;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      background-color: #fff;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo h1 {
+      color: hotpink;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 2em;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      flex: 1;
+    }
+
+    .hero-text {
+      flex: 1;
+      font-size: 1.5em;
+      padding: 1em;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 2em;
+    }
+
+    .producto {
+      background-color: #fff;
+      padding: 1em;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: goldenrod;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Logo.png" alt="Logo Smart Readings" />
+      <h1>Smart Readings</h1>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Más vendido</a>
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="Lectora.png" alt="Persona leyendo" />
+    <div class="hero-text">
+      <p>Ideas para leer, imprimir, crear y disfrutar.<br />Descargá lo que más te guste.</p>
+    </div>
+  </section>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="Portada1.jpg" alt="Pequeños cambios grandes resultados" />
+      <h3>Pequeños cambios grandes resultados</h3>
+      <p>$1000 ARS</p>
+      <p>CBU: 0110622630062218806079<br/>Alias: agus.martinez123</p>
+      <a class="boton" href="https://drive.google.com/file/d/10qyEngkY_ALDXWJJnYhqPtxpN93RUPkh/view?usp=drivesdk">Descargar</a>
+    </div>
+
+    <div class="producto">
+      <img src="Portada2.jpg" alt="Si escucharas mi corazón" />
+      <h3>Si escucharas mi corazón</h3>
+      <p>$2000 ARS</p>
+      <p>CBU: 0110622630062218806079<br/>Alias: agus.martinez123</p>
+      <a class="boton" href="https://drive.google.com/file/d/10sprkV2kK1WgCN5JoL6U05U17VD6OqZi/view?usp=drivesdk">Descargar</a>
+    </div>
+
+    <div class="producto">
+      <img src="Portada3.jpg" alt="100 recetas saludables" />
+      <h3>100 recetas saludables</h3>
+      <p>$1500 ARS</p>
+      <p>CBU: 0110622630062218806079<br/>Alias: agus.martinez123</p>
+      <a class="boton" href="https://drive.google.com/file/d/102e-4RYgdXSmfHq8kRAcCUe_gNRycX9Q/view?usp=drivesdk">Descargar</a>
+    </div>
+
+    <div class="producto">
+      <img src="Portada4.jpg" alt="Nosotros en la luna" />
+      <h3>Nosotros en la luna</h3>
+      <p>$2000 ARS</p>
+      <p>CBU: 0110622630062218806079<br/>Alias: agus.martinez123</p>
+      <a class="boton" href="https://drive.google.com/file/d/10Wxuaahh9iYlwOlFbFRSMoJwSEIGdyU9/view?usp=drivesdk">Descargar</a>
+    </div>
+  </section>
+
+  <section id="comentarios" style="padding: 2em;">
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = 'https://agusmartinez123.github.io';
+        this.page.identifier = 'smart-readings-comentarios';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://disqus_gE0elj4zq3.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </section>
+
+  <footer>
+    <p>Contacto: amilagrosmartinez69@gmail.com</p>
+  </footer>
+</body>
+</html>
